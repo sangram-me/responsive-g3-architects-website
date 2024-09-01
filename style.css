@@ -123,6 +123,78 @@
         color: rgb(114, 114, 114);
 }
 
+.feature-enjoy {
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 130px;
+}
+.feature-details {
+        max-width: 45%;
+}
+.feature-enjoy-title {
+        color: rgb(19, 19, 19);
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 4.2rem;
+        border-left: 5px solid rgb(255, 144, 14);
+        padding-left: 1.2rem;
+}
+.feature-enjoy-description {
+        color: rgb(114, 114, 114);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 26px;
+}
+
+.feature-enjoy-card {
+        margin-bottom: 1em;
+        padding: 0.4rem 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+        background: rgb(255, 255, 255);
+}
+.feature-enjoy-card h3 {
+        color: rgb(19, 19, 19);
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+}
+.feature-enjoy-card p {
+        color: rgb(114, 114, 114);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6rem;
+        text-align: justify;
+}
+.feature-image {
+        position: relative;
+        width: 55%;
+}
+.feature-image img {
+        width: 100%;
+        height: auto;
+}
+.feature-image-card {
+        position: absolute;
+        bottom: 10px;
+        left: -80px;
+        height: 200px;
+        width: 342px;
+        border-radius: 8px;
+        background: rgb(255, 144, 14);
+        color: white;
+        text-align: center;
+}
+.feature-image-card h1 {
+        font-size: 3.5rem;
+        line-height: 40px;
+}
+.feature-image-card P {
+        font-size: 1.6rem;
+}
+
 .section-title {
         color: rgb(19, 19, 19);
         font-size: 2.7rem;
@@ -163,7 +235,6 @@
         font-weight: 600;
 }
 
-
 .sponser {
         max-width: 1340px;
         margin: 5rem auto;
@@ -199,9 +270,9 @@ footer {
         max-width: 1340px;
         margin: 4rem auto 10rem;
 }
-.footer{
-       background: rgb(255, 244, 231);
-       border-radius: 8px;
+.footer {
+        background: rgb(255, 244, 231);
+        border-radius: 8px;
 }
 .footer p {
         padding: 2.5rem 10px;
@@ -209,14 +280,13 @@ footer {
         color: rgb(66, 66, 66);
         font-size: 1.3rem;
         font-weight: 400;
-
+        line-height: 2rem;
 }
 
 /* responsive media query (mobile devices)*/
 @media screen and (max-width: 576px) {
         header,
-        .teams, 
-        {
+        .teams {
                 padding: 10px 25px;
         }
         .navbar {
@@ -234,8 +304,40 @@ footer {
                 width: 100%;
                 padding: 2rem 0px 0px 0px;
         }
-
+        .feature-enjoy {
+                margin-top: 1rem;
+                margin-bottom: 0rem;
+                flex-direction: column;
+                padding: 40px 25px;
+                gap: 30px;
+        }
+        .feature-details {
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+        }
+        .feature-image {
+                position: relative;
+                width: 100%;
+                align-content: center;
+        }
+        .feature-image-card {
+                position: relative;
+                margin: 0px auto;
+                text-align: center;
+                left: 0px;
+                bottom: 0px;
+        }
+        .feature-image-card h1{
+              font-size: 3rem;
+              padding-top: 40px;
+              line-height: 40px;
+       }
+       .feature-image-card P{
+              font-size: 1.6rem;
+       }
         .some-facts {
+              margin: 1rem 0px;
                 padding: 40px 25px;
         }
         .some-facts-divs {
@@ -249,9 +351,9 @@ footer {
                 grid-template-columns: repeat(1, 1fr);
                 gap: 2rem;
         }
-        footer{
-              margin: 0px auto 2rem;
-              padding: 0px 25px;
+        footer {
+                margin: 0px auto 2rem;
+                padding: 0px 25px;
         }
 }
 
@@ -274,6 +376,43 @@ footer {
                 padding: 2rem 40px 50px 40px;
         }
 
+
+        .feature-enjoy {
+              margin-top: 1rem;
+              margin-bottom: 0rem;
+              flex-direction: column;
+              padding: 40px 25px;
+              gap: 30px;
+      }
+      .feature-details {
+              display: flex;
+              flex-direction: column;
+              max-width: 100%;
+      }
+      .feature-image {
+              position: relative;
+              width: 100%;
+              align-content: center;
+      }
+      .feature-image-card {
+              position: relative;
+              margin: 0px auto;
+              text-align: center;
+              left: 0px;
+              bottom: 0px;
+      }
+      .feature-image-card h1{
+            font-size: 3rem;
+            padding-top: 40px;
+            line-height: 40px;
+     }
+     .feature-image-card P{
+            font-size: 1.6rem;
+     }
+
+
+
+
         .some-facts {
                 padding: 40px 25px;
         }
@@ -283,14 +422,14 @@ footer {
         .facts-box {
                 margin: 1.5rem 0px;
         }
-       .sponser-img {
+        .sponser-img {
                 grid-template-columns: repeat(3, 1fr);
                 gap: 2rem;
         }
-        footer{
-              margin: 0px auto 2rem;
+        footer {
+                margin: 0px auto 2rem;
         }
-        .footer{
-              margin: 0px 25px;
+        .footer {
+                margin: 0px 25px;
         }
 }
